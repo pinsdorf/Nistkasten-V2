@@ -5,7 +5,7 @@ sudo pip --no-cache-dir install motioneye
 sudo mkdir -p /etc/motioneye
 sudo cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
 sudo mkdir -p /var/lib/motioneye
-sudo cp /usr/local/share/motioneye.systemd-unit-local /etc/systemd/system/motioneye.service
+sudo cp /usr/local/share/motioneye/extra/motioneye.systemd-unit-local /etc/systemd/system/motioneye.service
 sudo systemctl daemon-reload
 sudo systemctl enable motioneye
 sudo systemctl start motioneye
